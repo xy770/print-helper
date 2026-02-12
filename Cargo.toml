@@ -1,0 +1,26 @@
+[package]
+name = "print-helper"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+gtk = { version = "0.8.0", package = "gtk4" }
+gdk = { version = "0.8.0", package = "gdk4" }
+gio = { version = "0.19.0", features = ["v2_66"] }
+gdk-pixbuf = { version = "0.19.0" }
+image = { version = "0.24", default-features = false, features = [
+    "png",
+    "jpeg",
+    "gif",
+    "bmp",
+    "webp",
+    "tiff",
+    "ico",
+    "hdr",
+    "pnm",
+    "dds",
+    "farbfeld"
+] }
+futures = "0.3"
+anyhow = "1.0"
+glib = "0.19.0"
